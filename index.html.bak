@@ -12,51 +12,92 @@
     <div style="background-color: #8a2be2 ;">
       <h1 class="stijl2"><span style="color: white;">Marloes Venema</span></h1>
     </div>
-    <p class="stijl2">As of September 2018, I am a PhD student under supervision
-      of <a href="http://www.cs.ru.nl/%7Egergely/">Greg Alpár</a> in the <a href="https://www.ru.nl/ds/">Digital
+    <p class="stijl2">As of March 2023, I am a postdoctoral researcher in the <a
+        href="https://itsc.uni-wuppertal.de/en/">research group</a> of prof. dr.
+      <a href="https://itsc.uni-wuppertal.de/de/mitarbeiter/prof-dr-ing-tibor-jager/">Tibor
+        Jager</a> in the <a href="https://itsc.uni-wuppertal.de/en/">IT
+        Security and Cryptography Group</a> at the <a href="https://www.uni-wuppertal.de/en/">University
+        of Wuppertal</a>. Before this, I was a PhD student under supervision of
+      dr. <a href="http://www.cs.ru.nl/%7Egergely/">Greg Alpár</a> in the <a href="https://www.ru.nl/ds/">Digital
         Security</a> group at the <a href="https://www.ru.nl/icis/">Institute
         for C<img src="picture.jpg" alt="me" title="me" style="float: right; width: 130px; height: 130px;" />omputing
         and Information Sciences</a> of the <a href="https://www.ru.nl/">Radboud
-        University Nijmegen</a>. Before this, I obtained a master's degree in
+        University Nijmegen</a>. I defended my <a href="https://mtcvenema.nl/thesis">thesis</a>
+      titled "Attaining Basically Everything in Attribute-Based Encryption:
+      Simplifying the Design of Practical Schemes via Pair Encodings" on Tuesday
+      19 September 2023. Before my PhD, I obtained a master's degree in
       Computing Science (specialization: Cyber Security), and a bachelor's
       degree in Mathematics (with a minor in Computing Science), both at the
       Radboud University as well. </p>
-    <p class="stijl2">My research interests are generally covered by the term
-      'cryptographic protocols for privacy protection', with a special focus on
-      the enforcement of access control on a cryptographic level. To this end, I
-      have mainly studied attribute-based encryption. My other research
-      interests include threshold cryptography, homomorphic encryption,
-      zero-knowledge proofs, secure multiparty computation and proxy
-      re-encryption.</p>
+    <p class="stijl2">I am particularly interested in the theoretical design and
+      analysis of various cryptographic primitives, with the aim to make schemes
+      practical enough for specific real-world settings. I have mostly conducted
+      research in <span style="font-family: &quot;Trebuchet MS&quot;;">predicate
+        encryption, most notably pairing-based attribute-based encryption and
+        identity-based encryption, and</span><span style=" font-family: &quot;Trebuchet MS&quot;;">
+        hybrid encryption, including multi-recipient schemes. I am also
+        interested in other cryptographic primitives, including but certainly
+        not limited to proxy re-encryption, threshold cryptography, secure
+        multiparty computation, secure combinations of multiple primitives,
+        homomorphic encryption, authenticated key exchange, post-quantum
+        cryptography, etc.<br />
+      </span></p>
     <div style="background-color: #8a2be2 ;">
       <h2 class="stijl2"><span style="color: white;">Contact information</span></h2>
     </div>
-    <ul class="stijl2">
-      <li>
-        <p><em>Email address</em>: <br />
-          m.venema at cs.ru.nl or marloes.venema at ru.nl</p>
-      </li>
-      <li>
-        <p><em>Postal address: </em><br />
-          Faculty of Science <br />
-          University of Nijmegen <br />
-          Postbus 9010 <br />
-          6500GL Nijmegen <br />
-          The Netherlands</p>
-      </li>
-      <li><em>Vistiting address:<br />
-        </em>Room M1.03.17 <br />
-        Faculty of Science <br />
-        Toernooiveld 212 <br />
-        6525EC Nijmegen</li>
-    </ul>
+    <span style="font-family: &quot;Trebuchet MS&quot;;">At this time, you can
+      best reach me via email: venema at uni-wuppertal.de or mvenemacrypto at
+      gmail.com</span><br />
     <h2 class="stijl2" style="background-color: blueviolet;"><span style="color: white;">Academic
         publications</span></h2>
     <ul>
+      <li><span style=" font-family: &quot;Trebuchet MS&quot;;">Doreen Riepel,
+          Marloes Venema, and Tanya Verma, "ISABELLA: Improving Structures of
+          Attribute-Based Encryption Leveraging Linear Algebra", to appear at <i>ACM
+            CCS 2024.</i></span><br />
+        <span style="font-family: &quot;Trebuchet MS&quot;;"></span></li>
+      <li><span style="font-family: &quot;Trebuchet MS&quot;;">Marloes Venema,
+          and Leon Botros, "Using Predicate Extension for Predicate Encryption
+          to Generically Obtain Chosen-Ciphertext Security and Signatures ", in
+          <i>IACR CiC 2024-1, 2024,</i> pp. 1-57, 2024<i>.</i></span><br />
+        <span style="font-family: &quot;Trebuchet MS&quot;;"></span></li>
+      <li><span style="font-family: &quot;Trebuchet MS&quot;;">Antonio de la
+          Piedra, Marloes Venema, and Greg Alpár, "ACABELLA: Automated
+          (Crypt)analysis of Attribute-Based Encryption Leveraging Linear
+          Algebra", in <i>ACM CCS 2023,</i> pp. 3269-3283, 2023<i>.</i></span><br />
+        <span style="font-family: &quot;Trebuchet MS&quot;;"></span></li>
+      <li><span style="font-family: &quot;Trebuchet MS&quot;;">Watson Ladd,
+          Tanya Verma, Marloes Venema, Armando Faz-Hernández, Brendan McMillion,
+          Avani Wildani, and Nick Sullivan, "Portunus: Re-imagining Access
+          Control in Distributed Systems", in <i>USENIX ATC 2023<span style="font-family: serif;"></span>,
+          </i>pp. 35-52, 2023</span><i>.<br />
+        </i><span style="font-family: &quot;Trebuchet MS&quot;;"></span></li>
+      <li><span style="font-family: &quot;Trebuchet MS&quot;;">Leon Botros,
+          Merel Brandon, Bart Jacobs, Daniel Ostkamp, Hanna Schraffenberger, and
+          Marloes Venema, "PostGuard: Towards easy and secure email
+          communication", in <i>Extended Abstracts of the 2023 CHI Conference
+            on Human Factors in Computing Systems (CHI EA '23)</i>, 2023. </span><br />
+        <span style="font-family: &quot;Trebuchet MS&quot;;"></span></li>
+      <li><span style="font-family: &quot;Trebuchet MS&quot;;">Marloes Venema,
+          and Greg Alpár, "GLUE: Generalizing Unbounded Attribute-Based
+          Encryption for Flexible Efficiency Trade-Offs", in <i>PKC 2023</i>,
+          pp. 652-682, Springer, 2023.</span><br />
+        <span style="font-family: &quot;Trebuchet MS&quot;;"></span></li>
+      <li><span style="font-family: &quot;Trebuchet MS&quot;;">Marloes Venema,
+          "A Practical Compiler for Attribute-Based Encryption: New
+          Decentralized Constructions and More" , in <i>CT-RSA 2023, </i>pp.
+          132-159, Springer, 2023.</span><br />
+        <span style="font-family: &quot;Trebuchet MS&quot;;"></span></li>
+      <li><span style="font-family: &quot;Trebuchet MS&quot;;">Marloes Venema,
+          Greg Alpár, and Jaap-Henk Hoepman, "Systematizing Core Properties of
+          Pairing-Based Attribute-Based Encryption to Uncover Remaining
+          Challenges in Enforcing Access Control in Practice", in <i>Designs,
+            Codes and Cryptography 91(1)</i>, pp. 165-220, 2023.</span><br />
+        <span style="font-family: &quot;Trebuchet MS&quot;;"></span></li>
       <li><span style="font-family: &quot;Trebuchet MS&quot;;">Marloes Venema,
           and Greg Alpár, "TinyABE: Unrestricted Ciphertext-Policy
           Attribute-Based Encryption for Embedded Devices and Low-Quality
-          Networks", to appear at <i>AFRICACRYPT 2022</i>.</span><br />
+          Networks", in <i>AFRICACRYPT 2022, </i>pp. 103-129, Springer, 2022.</span><br />
         <span style="font-family: &quot;Trebuchet MS&quot;;"></span></li>
       <li><span style="font-family: &quot;Trebuchet MS&quot;;">Antonio de la
           Piedra, Marloes Venema, and Greg Alpár, "ABE Squared: Accurately
@@ -73,22 +114,64 @@
         and other publications<br />
       </span></h2>
     <ul>
+      <li><span style=" font-family: &quot;Trebuchet MS&quot;;"><a href="https://doreenriepel.me/">Doreen
+            Riepel</a>, Marloes Venema, and Tanya Verma, "ISABELLA: Improving
+          Structures of Attribute-Based Encryption Leveraging Linear Algebra",
+          in </span><br />
+        <span style="font-family: &quot;Trebuchet MS&quot;;"> <i>IACR
+            Cryptology ePrint Archive, </i>Report 2024/1352, 2024, available
+          at: <a href="https://eprint.iacr.org/2024/1352">https://eprint.iacr.org/2024/1352<span
+              style="color: black;"></span></a>, [<a href="https://github.com/lincolncryptools/ISABELLA">code</a>]</span><br />
+        <span style="font-family: &quot;Trebuchet MS&quot;;"></span></li>
+      <li><span style="font-family: &quot;Trebuchet MS&quot;;">Antonio de la
+          Piedra, Marloes Venema, and Greg Alpár, "ACABELLA: Automated
+          (Crypt)analysis of Attribute-Based Encryption Leveraging Linear
+          Algebra", </span><span style="font-family: &quot;Trebuchet MS&quot;;">in
+          <i>IACR Cryptology ePrint Archive, </i>Report 2023/1274, 2023,
+          available at: <a href="https://eprint.iacr.org/2023/1274">https://eprint.iacr.org/2023/1274<span
+              style="color: black;"></span></a>, [<a href="https://github.com/abecryptools/ACABELLA">code</a>],
+          [<a href="https://acabel.la/">web application</a>]</span></li>
+      <li><span style="font-family: &quot;Trebuchet MS&quot;;">Marloes Venema,
+          "A Practical Compiler for Attribute-Based Encryption: New
+          Decentralized Constructions and More", </span><span style="font-family: &quot;Trebuchet MS&quot;;">in
+          <i>IACR Cryptology ePrint Archive, </i>Report 2023/143, 2023,
+          available at: <a href="https://eprint.iacr.org/2023/143">https://eprint.iacr.org/2023/143</a></span><br />
+        <span style="font-family: &quot;Trebuchet MS&quot;;"></span></li>
+      <li><span style="font-family: &quot;Trebuchet MS&quot;;"><a href="https://kc2kdm.com/">Watson
+            Ladd</a>, Marloes Venema, and <a href="https://research.cloudflare.com/people/tanya-verma/">Tanya
+            Verma</a>, "Portunus: Re-imagining Access Control in Distributed
+          Systems", in IACR Cryptology ePrint Archive, Report 2023/094, 2023,
+          available at: <a href="https://eprint.iacr.org/2023/094">https://eprint.iacr.org/2023/094</a></span><span
+          style="font-family: &quot;Trebuchet MS&quot;;">, [<a href="https://github.com/cloudflare/circl/tree/main/abe/cpabe/tkn20">code</a>],
+          [<a href="https://blog.cloudflare.com/inside-geo-key-manager-v2/">Tanya's
+            blog post</a>], [<a href="https://www.youtube.com/watch?t=1253&amp;v=Xh849Ij3lhU&amp;feature=youtu.be">RWC2023
+            talk</a>]</span><a href="https://eprint.iacr.org/2023/094"><span style="font-family: &quot;Trebuchet MS&quot;;"></span></a></li>
+      <li><span style="font-family: &quot;Trebuchet MS&quot;;">Marloes Venema,
+          and Leon Botros, "Efficient and Generic Transformations for
+          Chosen-Ciphertext Secure Predicate Encryption", in <i>IACR Cryptology
+            ePrint Archive, </i>Report 2022/1436, 2022, available at: <a href="https://eprint.iacr.org/2022/1436">https://eprint.iacr.org/2022/1436</a>,
+          [<a href="https://github.com/leonbotros/pe_cca">code</a>]</span><br />
+        <span style="font-family: &quot;Trebuchet MS&quot;;"></span></li>
       <li><span style="font-family: &quot;Trebuchet MS&quot;;">Marloes Venema,
           and Greg Alpár, "GLUE: Generalizing Unbounded Attribute-Based
           Encryption for Flexible Efficiency Trade-Offs", in <i>IACR Cryptology
-            ePrint Archive, </i>Report 2022/613, 2022, available at: <a href="https://eprint.iacr.org/2022/613">https://eprint.iacr.org/2022/613</a></span><br />
+            ePrint Archive, </i>Report 2022/613, 2022, available at: <a href="https://eprint.iacr.org/2022/613">https://eprint.iacr.org/2022/613</a>,
+          [<a href="https://github.com/mtcvenema/glue">code</a>]</span><br />
         <span style="font-family: &quot;Trebuchet MS&quot;;"></span></li>
       <li><span style="font-family: &quot;Trebuchet MS&quot;;">Marloes Venema,
           and Greg Alpár, "TinyABE: Unrestricted Ciphertext-Policy
           Attribute-Based Encryption for Embedded Devices and Low-Quality
           Networks", in <i>IACR Cryptology ePrint Archive, </i>Report
-          2022/569, 2022, available at: <a href="https://eprint.iacr.org/2022/569">https://eprint.iacr.org/2022/569</a></span><br />
+          2022/569, 2022, available at: <a href="https://eprint.iacr.org/2022/569">https://eprint.iacr.org/2022/569</a>,
+          [<a href="https://github.com/mtcvenema/tinyabe">code</a>]</span><br />
         <span style="font-family: &quot;Trebuchet MS&quot;;"></span></li>
       <li><span style="font-family: &quot;Trebuchet MS&quot;;">Antonio de la
           Piedra, Marloes Venema, and Greg Alpár, "ABE Squared: Accurately
           Benchmarking Efficiency of Attribute-Based Encryption", i</span><span
           style="font-family: &quot;Trebuchet MS&quot;;">n <i>IACR Cryptology
-            ePrint Archive, </i>Report 2022/038, 2022, available at: <a href="https://eprint.iacr.org/2022/038">https://eprint.iacr.org/2022/038</a></span><br />
+            ePrint Archive, </i>Report 2022/038, 2022, available at: <a href="https://eprint.iacr.org/2022/038">https://eprint.iacr.org/2022/038</a>,
+          [<a href="https://github.com/abecryptools/abe_squared">code</a>], [<a
+            href="https://www.youtube.com/watch?v=gRH-UNd3VHU">talk</a>]</span><br />
         <span style="font-family: &quot;Trebuchet MS&quot;;"></span><span style="font-family: &quot;Trebuchet MS&quot;;"></span></li>
       <li><span style="font-family: &quot;Trebuchet MS&quot;;"><a href="https://www.delapiedra.org/">Antonio
             de la Piedra</a>, and Marloes Venema, "Practical Attacks Against
@@ -112,15 +195,25 @@
         <span style="font-family: &quot;Trebuchet MS&quot;;"></span></li>
     </ul>
     <h2 class="stijl2" style="background-color: blueviolet;"><span style="color: white;">Teaching</span></h2>
+    <p><b><span style="font-family: &quot;Trebuchet MS&quot;;">At the University
+          of Wuppertal:</span></b></p>
+    <ul class="stijl2">
+      <li><i>Winter semester 2024-2025</i>:<br />
+        Effiziente Implementierung kryptographischer Verfahren - teaching
+        assistant</li>
+      <li><i>Summer semester 2024</i>:<br />
+        Provable Security - lecturer</li>
+      <li><i>Winter semester 2023-2024:</i> <br />
+        Theoretical Foundations of Applied Cryptography - teaching assistant</li>
+      <li><i>Summer semester 2023</i>:<br />
+        Provable Security - lecturer</li>
+    </ul>
+    <p><b><span style="font-family: &quot;Trebuchet MS&quot;;">At Radboud
+          University:</span></b></p>
     <ul class="stijl2">
       <li><i>Spring 2021:<br />
         </i><a href="https://www.ru.nl/courseguides/science/vm/osirislinks/ibc/nwi-ibc023/">Introduction
           to Cryptography</a> (IBC023) - teaching assistant</li>
-      <li><i>February-November 2020:<br />
-        </i>Master thesis by Wouter de Boer on "<a href="https://www.ru.nl/publish/pages/769526/wouter_de_boer.pdf">Secure
-          Computation on the SAP Cloud Platform</a>" - co-supervisor with <a href="https://cs.ru.nl/%7Ejoan/">Joan
-          Daemen</a> and Aslı Bay<br />
-        <em></em></li>
       <li><em>Spring 2020:<br />
         </em><a href="https://www.ru.nl/courseguides/science/vm/osirislinks/ibc/nwi-ibc023/">Introduction
           to Cryptography</a> (IBC023) - teaching assistant</li>
@@ -132,8 +225,89 @@
       <li><em>Fall 2018:</em> <a href="http://www.cs.ru.nl/%7Efreek/courses/fr-2018/"><br />
           Introduction to Formal Reasoning</a> (IPK001) - teaching assistant</li>
     </ul>
-    <h2 class="stijl2" style="background-color: blueviolet;"><span style="color: white;">Master
-        thesis</span></h2>
+    <h2 class="stijl2" style="background-color: blueviolet;"><span style="color: white;">Supervision</span></h2>
+    <p><b><span style="font-family: &quot;Trebuchet MS&quot;;">At the University
+          of Wuppertal:</span></b></p>
+    <ul class="stijl2">
+      <li><i>Winter semester 2024-2025</i>:</li>
+      <ul>
+        <li>Master thesis by Adrian Ackermann on automatically implementing ABE
+          from pair encodings in Charm, title to be determined</li>
+      </ul>
+      <li><i>Summer semester 2024</i>:<br />
+        <ul>
+          <li>Master seminar thesis by Dennis Funke on Portunus and its
+            application of ABE, titled "A Careful Look at Portunus and its
+            Application of Attribute-Based Encryption"</li>
+          <li>Master seminar thesis by Adrian Ackermann on constructing ABE from
+            pair encodings titled "(Pairing-based) ABE for Non-Cryptographers"</li>
+        </ul>
+      </li>
+    </ul>
+    <p><b><span style="font-family: &quot;Trebuchet MS&quot;;">At Radboud
+          University:</span></b></p>
+    <ul class="stijl2">
+      <li><i>February-November 2020:<br />
+        </i>
+        <ul>
+          <li>Master thesis by Wouter de Boer on "<a href="https://www.ru.nl/publish/pages/769526/wouter_de_boer.pdf">Secure
+              Computation on the SAP Cloud Platform</a>" - co-supervisor with <a
+              href="https://cs.ru.nl/%7Ejoan/">Joan Daemen</a> and Aslı Bay</li>
+        </ul>
+        <em></em></li>
+    </ul>
+    <p></p>
+    <ul class="stijl2">
+    </ul>
+    <h2 class="stijl2" style="background-color: blueviolet;"><span style="color: white;">Reviewing</span></h2>
+    <p class="stijl2">I served as an external reviewer and PC member for several
+      conferences and journals. As a PC member:</p>
+    <ul>
+      <li><span style="font-family: &quot;Trebuchet MS&quot;;">ISC 2024</span><br />
+        <span style="font-family: &quot;Trebuchet MS&quot;;"></span></li>
+      <li><span style="font-family: &quot;Trebuchet MS&quot;;">CT-RSA 2024</span><br />
+        <span style="font-family: &quot;Trebuchet MS&quot;;"></span></li>
+      <li><span style="font-family: &quot;Trebuchet MS&quot;;">ESORICS 2023</span></li>
+    </ul>
+    <p class="stijl2">As an external reviewer:</p>
+    <ul>
+      <li><span style="   font-family: &quot;Trebuchet MS&quot;;">ACM TOPS 2024</span><br />
+        <span style="  font-family: &quot;Trebuchet MS&quot;;"></span></li>
+      <li><span style="  font-family: &quot;Trebuchet MS&quot;;">Designs, Codes
+          and Cryptography 2023, 2024</span></li>
+      <span style="font-family: &quot;Trebuchet MS&quot;;"></span>
+      <li><span style="         font-family: &quot;Trebuchet MS&quot;;">CRYPTO
+          2020, 2024</span></li>
+      <li><span style="font-family: &quot;Trebuchet MS&quot;;">ACNS 2024</span><br />
+        <span style="font-family: &quot;Trebuchet MS&quot;;"></span></li>
+      <li><span style="          font-family: &quot;Trebuchet MS&quot;;">EUROCRYPT
+          2020, 2023, 2024<br />
+        </span></li>
+      <li><span style="font-family: &quot;Trebuchet MS&quot;;">PKC 2024</span><br />
+        <span style="font-family: &quot;Trebuchet MS&quot;;"></span></li>
+      <li><span style="font-family: &quot;Trebuchet MS&quot;;">ISC 2023</span><br />
+        <span style="font-family: &quot;Trebuchet MS&quot;;"></span></li>
+      <li><span style="font-family: &quot;Trebuchet MS&quot;;">TCC 2023</span></li>
+      <li><span style=" font-family: &quot;Trebuchet MS&quot;;">ASIACRYPT 2023</span></li>
+      <li><span style="   font-family: &quot;Trebuchet MS&quot;;">Transactions
+          on Dependable and Secure Computing 2023</span></li>
+      <li><span style="    font-family: &quot;Trebuchet MS&quot;;">ACM-CCS 2023</span></li>
+      <li><span style="     font-family: &quot;Trebuchet MS&quot;;">IEEE-S&amp;P
+          2023</span></li>
+      <li><span style="           font-family: &quot;Trebuchet MS&quot;;">AFRICACRYPT
+          2019, 2022, 2023<br />
+        </span></li>
+      <li><span style="      font-family: &quot;Trebuchet MS&quot;;">Journal of
+          Cryptographic Engineering 2022</span></li>
+      <li><span style="       font-family: &quot;Trebuchet MS&quot;;">EuroS&amp;P
+          2021</span></li>
+      <li><span style="        font-family: &quot;Trebuchet MS&quot;;">NDSS
+          2020, 2021</span></li>
+    </ul>
+    <p></p>
+    <ul class="stijl2">
+    </ul>
+    <h2 class="stijl2" style="background-color: blueviolet;"><span style="color: white;">Other</span></h2>
     <p class="stijl2">I wrote my master thesis about<em> </em><a href="https://www.ru.nl/publish/pages/769526/marloes_venema.pdf">Decentralized
         Attribute-Based Encryption for DECODE</a> under supervision of Jaap-Henk
       Hoepman in the period from February to August 2018.</p>
