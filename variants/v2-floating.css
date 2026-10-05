@@ -1,0 +1,17 @@
+/* V2 · Floating: the whole header is a detached rounded bar; section titles with a side bar */
+body { padding-top: 6rem; }
+.site-header {
+  top: 0.9rem; left: 50%; right: auto; transform: translateX(-50%);
+  width: min(1000px, calc(100% - 2rem)); padding: 0.35rem 0.5rem;
+  border-radius: 2rem; border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(42, 26, 69, 0.8); box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+}
+.navbar { min-height: 2.75rem; }
+.navbar-logo { padding-left: 1.1rem; }
+.navbar-links { background: none; border: 0; box-shadow: none; padding: 0; }
+.navbar-item { border-radius: 2rem; padding: 0.35rem 0.8rem; }
+.navbar-item.active { background: rgba(255,255,255,0.14); }
+.nav-mobile-dropdown { border-radius: 1rem; margin-top: 0.5rem; border: 1px solid rgba(255,255,255,0.12); }
+.section-title { border-left: 4px solid var(--accent); padding-left: 0.7rem; line-height: 1.2; }
+.section-title::after { display: none; }
+.nav-mobile-dropdown:not(.open) { border: 0; margin: 0; }
