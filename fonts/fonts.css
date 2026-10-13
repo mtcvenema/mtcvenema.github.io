@@ -48,12 +48,11 @@
                  U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* Sora (headings) – self-hosted. Put the file fonts/sora-latin.woff2 next to this file
-   (variable font, weights 500-700). Until it exists, headings fall back to Montserrat. */
+/* Sora (headings) – self-hosted variable font (weights 100-800). */
 @font-face {
   font-family: 'Sora';
   font-style: normal;
-  font-weight: 500 700;
+  font-weight: 100 800;
   font-display: swap;
-  src: url('sora-latin.woff2') format('woff2');
+  src: url('Sora.ttf') format('truetype');
 }
