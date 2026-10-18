@@ -222,3 +222,6 @@ a.pub-title:hover { opacity: 0.75; }
   .about-hero > div { width: 100%; }
   .about-icons { grid-template-columns: repeat(6, 2rem); }
 }
+
+/* Tools and Software: space between a group's intro text and its entries */
+#tools .body-text { margin-bottom: 3mm; }

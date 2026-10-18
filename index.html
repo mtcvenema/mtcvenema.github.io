@@ -21,6 +21,7 @@
         <a class="navbar-item" href="#about">About</a>
         <a class="navbar-item" href="#publications">Publications</a>
         <a class="navbar-item" href="#projects">Projects</a>
+        <a class="navbar-item" href="#tools">Tools</a>
         <a class="navbar-item" href="#teaching">Teaching</a>
         <a class="navbar-item" href="#supervision">Supervision</a>
         <a class="navbar-item" href="#service">Service</a>
@@ -31,6 +32,7 @@
       <a href="#about">About</a>
       <a href="#publications">Publications</a>
       <a href="#projects">Projects</a>
+      <a href="#tools">Tools</a>
       <a href="#teaching">Teaching</a>
       <a href="#supervision">Supervision</a>
       <a href="#service">Service</a>
@@ -100,6 +102,62 @@
             simultaneously achieving practical and security properties in attribute-based encryption, with the long-term goal of enabling
             privacy-preserving access control (also to data that needs to be processed), including in the post-quantum setting.
           </p>
+        </div>
+      </details>
+    </div>
+
+    <!-- tools and software -->
+    <div class="card" id="tools">
+      <p class="section-title">Tools and Software</p>
+
+      <details class="pub-year" open>
+        <summary>Automated analysis and implementation</summary>
+        <div class="pub-year-content">
+          <p class="body-text">I have contributed to the automation of various efforts that are usually hard to do manually, e.g.,</p>
+          <div class="talk">
+            <div class="talk-title">ACABELLA</div>
+            <div class="talk-meta">ACABELLA can be used for the automated security analysis of ABE schemes, which includes attacks and security proofs. It is available as a command-line tool and as a web app.</div>
+            <div class="pub-links"><a class="pub-link" href="https://mtcvenema.nl/acabella" target="_blank">web app (native)</a> <a class="pub-link" href="https://acabella.net/" target="_blank">web app (external)</a> <a class="pub-link" href="https://github.com/abecryptools/ACABELLA" target="_blank">code</a> <a class="pub-link" href="https://eprint.iacr.org/2023/1274" target="_blank">paper</a></div>
+          </div>
+          <div class="talk">
+            <div class="talk-title">pracy</div>
+            <div class="talk-meta">pracy is a compiler that automatically turns ABE schemes, described as pair encodings, into full-fledged ABE schemes, and then into working implementations in, e.g., Python or C/C++.</div>
+            <div class="pub-links"><a class="pub-link" href="https://github.com/lincolncryptools/pracy" target="_blank">code</a> <a class="pub-link" href="https://eprint.iacr.org/2025/1240" target="_blank">paper</a></div>
+          </div>
+        </div>
+      </details>
+
+      <details class="pub-year" open>
+        <summary>Applications of ABE</summary>
+        <div class="pub-year-content">
+          <p class="body-text">I have contributed to various real-world applications of ABE, e.g.,</p>
+          <div class="talk">
+            <div class="talk-title">PostGuard</div>
+            <div class="talk-meta">PostGuard is an email encryption tool that uses identity-based encryption. It can be used to securely send emails, with a user-friendly plugin in your mail client or via the web tool.</div>
+            <div class="pub-links"><a class="pub-link" href="https://github.com/encryption4all/postguard" target="_blank">code</a> <a class="pub-link" href="https://repository.ubn.ru.nl/bitstream/handle/2066/292101/292101.pdf?sequence=1&isAllowed=y" target="_blank">paper</a></div>
+          </div>
+          <div class="talk">
+            <div class="talk-title">Portunus</div>
+            <div class="talk-meta">Portunus is an access control system for distributed systems based on ABE. It is implemented in Cloudflare’s CIRCL library and used in Cloudflare’s Geo Key Manager v2.</div>
+            <div class="pub-links"><a class="pub-link" href="https://github.com/cloudflare/circl/tree/main/abe/cpabe/tkn20" target="_blank">code</a> <a class="pub-link" href="https://eprint.iacr.org/2023/094" target="_blank">paper</a></div>
+          </div>
+        </div>
+      </details>
+
+      <details class="pub-year" open>
+        <summary>Implementations of ABE schemes</summary>
+        <div class="pub-year-content">
+          <p class="body-text">I have contributed to the implementation of various ABE schemes, e.g.,</p>
+          <div class="talk">
+            <div class="talk-title">ABE Squared</div>
+            <div class="talk-meta">The ABE Squared framework provides implementations of several popular ciphertext-policy ABE schemes for monotone Boolean formulas.</div>
+            <div class="pub-links"><a class="pub-link" href="https://github.com/abecryptools/abe_squared" target="_blank">code</a> <a class="pub-link" href="https://eprint.iacr.org/2022/038" target="_blank">paper</a></div>
+          </div>
+          <div class="talk">
+            <div class="talk-title">ABE Cubed</div>
+            <div class="talk-meta">ABE Cubed provides various implementations of the decentralized CP-ABE scheme in <a href="https://eprint.iacr.org/2024/1352" target="_blank">RVV24</a>, as well as our structural optimizations thereof.</div>
+            <div class="pub-links"><a class="pub-link" href="https://github.com/lincolncryptools/ABE_Cubed" target="_blank">code</a> <a class="pub-link" href="https://eprint.iacr.org/2025/1230" target="_blank">paper</a></div>
+          </div>
         </div>
       </details>
     </div>
