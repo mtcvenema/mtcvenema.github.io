@@ -1,0 +1,129 @@
+/* ACABELLA tool page. Builds on the site's custom.css tokens (--ink, --accent, --muted, --line, --card). */
+
+.tool-intro { display: grid; grid-template-columns: 1fr auto; gap: 1.5rem; align-items: start; }
+.tool-intro .about-text { max-width: 62ch; }
+
+/* Engine status: tells people the Python runtime is still downloading */
+.engine {
+  display: inline-flex; align-items: center; gap: 0.5rem; white-space: nowrap;
+  font-size: 0.8em; font-weight: 600; color: var(--muted);
+  border: 1px solid rgba(42,26,69,0.18); border-radius: 2rem; padding: 0.35rem 0.85rem;
+  background: rgba(255,255,255,0.55);
+}
+.engine-dot { width: 0.55rem; height: 0.55rem; border-radius: 50%; background: #c9a227; }
+.engine[data-state="ready"] .engine-dot { background: #3f9b62; }
+.engine[data-state="busy"] .engine-dot { background: var(--accent); animation: pulse 1s ease-in-out infinite; }
+.engine[data-state="error"] .engine-dot { background: #c0392b; }
+@keyframes pulse { 50% { opacity: 0.25; } }
+@media (prefers-reduced-motion: reduce) { .engine[data-state="busy"] .engine-dot { animation: none; } }
+
+/* Mode switch, styled like the floating nav pills */
+.mode-switch {
+  display: inline-flex; gap: 0.25rem; padding: 0.3rem; margin: 0.25rem 0 1.25rem;
+  background: var(--bg); border-radius: 2rem;
+}
+.mode-switch button {
+  font-family: var(--heading-font); font-weight: 600; font-size: 0.85em; letter-spacing: 0.02em;
+  color: rgba(255,255,255,0.75); background: none; border: 0; border-radius: 2rem;
+  padding: 0.45rem 1rem; cursor: pointer;
+}
+.mode-switch button[aria-selected="true"] { background: rgba(255,255,255,0.16); color: white; }
+.mode-switch button:hover { color: white; }
+.mode-blurb { font-size: 0.9em; line-height: 1.7; color: #333; margin-bottom: 1rem; max-width: 70ch; }
+
+/* Start-from row */
+.start-row { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-bottom: 1.25rem; }
+.start-row label { font-size: 0.85em; font-weight: 600; color: var(--ink); }
+.start-row select { min-width: 16rem; flex: 1 1 16rem; max-width: 28rem; }
+
+/* Form controls */
+.field { display: flex; flex-direction: column; gap: 0.3rem; min-width: 0; }
+.field > label { font-family: var(--heading-font); font-size: 0.82em; font-weight: 600; color: var(--ink); }
+.field .hint { font-size: 0.75em; color: var(--muted); }
+.fields { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem; }
+.fields .wide { grid-column: 1 / -1; }
+
+.tool input[type="text"], .tool textarea, .tool select {
+  font: inherit; font-size: 0.88em; color: #1a1a1a; width: 100%;
+  background: white; border: 1px solid var(--line); border-radius: 0.6rem; padding: 0.5rem 0.65rem;
+}
+.tool textarea, .tool input.expr {
+  font-family: 'SF Mono', 'Fira Code', Consolas, monospace; font-size: 0.85em; line-height: 1.55;
+}
+.tool textarea { resize: vertical; min-height: 4.6rem; }
+.tool input:focus-visible, .tool textarea:focus-visible, .tool select:focus-visible,
+.tool button:focus-visible, .tool summary:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 2px;
+}
+
+/* Analysis groups reuse .pub-year from the site; a switch decides whether it runs */
+.analysis.pub-year summary { gap: 1rem; }
+.analysis .run-toggle { margin-left: auto; display: inline-flex; align-items: center; gap: 0.4rem;
+  font-family: 'Montserrat', sans-serif; font-variant: normal; font-size: 0.65em; font-weight: 600; color: var(--muted); }
+.analysis .run-toggle input { accent-color: var(--accent); width: 1rem; height: 1rem; }
+.analysis.is-off .pub-year-content { opacity: 0.5; }
+.analysis .copy-shared { margin-bottom: 0.75rem; }
+
+.corr-rows { display: flex; flex-direction: column; gap: 0.4rem; }
+.corr-row { display: grid; grid-template-columns: 9rem 1fr auto; gap: 0.4rem; }
+.icon-btn { background: none; border: 0; color: var(--muted); cursor: pointer; font-size: 1em; padding: 0 0.4rem; }
+.icon-btn:hover { color: var(--ink); }
+
+/* Buttons */
+.btn {
+  font-family: var(--heading-font); font-weight: 600; font-size: 0.88em; cursor: pointer;
+  border-radius: 2rem; padding: 0.55rem 1.3rem; border: 1px solid transparent;
+}
+.btn-primary { background: var(--accent); color: white; }
+.btn-primary:hover { background: #6a3dba; }
+.btn-primary:disabled { opacity: 0.5; cursor: wait; }
+.btn-quiet { background: none; color: var(--ink); border-color: rgba(42,26,69,0.25); }
+.btn-quiet:hover { background: rgba(124,77,204,0.08); border-color: rgba(124,77,204,0.45); }
+.link-btn { background: none; border: 0; padding: 0; color: var(--accent); font: inherit; font-size: 0.85em; font-weight: 500; cursor: pointer; }
+.link-btn:hover { text-decoration: underline; }
+.run-row { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; margin-top: 1.5rem; }
+.run-row .run-note { font-size: 0.8em; color: var(--muted); }
+
+.form-errors { margin-top: 1rem; display: flex; flex-direction: column; gap: 0.35rem; }
+.form-errors p { font-size: 0.85em; color: #8f2318; background: #fbecea; border-radius: 0.5rem; padding: 0.45rem 0.75rem; }
+
+/* Results */
+.result { background: rgba(124,77,204,0.05); border-radius: 0.75rem; padding: 1rem 1.25rem; margin-top: 1rem; }
+.result h3 { font-family: var(--heading-font); font-size: 1em; font-weight: 600; color: var(--ink); margin: 0 0 0.6rem; }
+.result pre {
+  margin: 0; white-space: pre-wrap; word-break: break-word; overflow-x: auto;
+  font-family: 'SF Mono', 'Fira Code', Consolas, monospace; font-size: 0.8em; line-height: 1.55; color: #222;
+}
+.result .verdict { font-weight: 600; color: var(--ink); font-size: 0.9em; margin-bottom: 0.6rem; }
+.result .error { color: #8f2318; font-size: 0.9em; }
+.result details { margin-top: 0.75rem; }
+.result details summary { cursor: pointer; font-size: 0.8em; color: var(--muted); }
+.proof { margin-top: 1rem; overflow-x: auto; }
+
+/* Substitution vectors: the typeset matrices are the focal point of the page */
+.vectors { display: grid; grid-template-columns: max-content 1fr; gap: 0.25rem 1.25rem; align-items: center; }
+.vectors .v-name { font-size: 1.05em; color: var(--ink); text-align: right; }
+.vectors .v-val { overflow-x: auto; padding: 0.25rem 0; border-bottom: 1px solid rgba(42,26,69,0.08); }
+.vectors .v-val mjx-container { margin: 0.2rem 0 !important; }
+
+.json-preview pre {
+  background: white; border: 1px solid var(--line); border-radius: 0.75rem; padding: 0.9rem 1rem;
+  font-family: 'SF Mono', 'Fira Code', Consolas, monospace; font-size: 0.78em; line-height: 1.5;
+  max-height: 24rem; overflow: auto; margin: 0 0 0.75rem;
+}
+.json-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.paste-json { margin-top: 0.75rem; }
+.paste-json textarea { min-height: 7rem; margin: 0.5rem 0; }
+
+.credits { font-size: 0.85em; line-height: 1.7; color: #333; }
+.credits + .credits { margin-top: 0.6rem; }
+
+[hidden] { display: none !important; }
+
+@media (max-width: 768px) {
+  .tool-intro { grid-template-columns: 1fr; }
+  .fields { grid-template-columns: 1fr; }
+  .corr-row { grid-template-columns: 7rem 1fr auto; }
+  .vectors { grid-template-columns: 1fr; }
+  .vectors .v-name { text-align: left; margin-top: 0.5rem; }
+}

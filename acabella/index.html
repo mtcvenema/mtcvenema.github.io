@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="referrer" content="no-referrer">
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../custom.css">
+  <link rel="stylesheet" href="../variants/v2-floating.css">
+  <title>ACABELLA · Marloes Venema</title>
+  <meta name="description" content="Analyze the security of attribute-based encryption schemes with ACABELLA and the ISABELLA extension, directly in your browser.">
+  <link rel="stylesheet" href="acabella.css?v=cad1aef69b">
+</head>
+
+<body>
+
+  <!-- fixed header (same as the rest of the site; edit shared/header.html to change it on every tool page) -->
+  <header class="site-header">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <a class="navbar-logo" href="../index.html">Marloes <span>Venema</span></a>
+      <div class="navbar-links">
+        <a class="navbar-item" href="../index.html#about">About</a>
+        <a class="navbar-item" href="../index.html#publications">Publications</a>
+        <a class="navbar-item" href="../index.html#projects">Projects</a>
+        <a class="navbar-item" href="../index.html#teaching">Teaching</a>
+        <a class="navbar-item" href="../index.html#supervision">Supervision</a>
+        <a class="navbar-item" href="../index.html#service">Service</a>
+      </div>
+      <button class="navbar-hamburger" id="nav-toggle" aria-label="Open navigation">☰</button>
+    </nav>
+    <div class="nav-mobile-dropdown" id="nav-dropdown">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#publications">Publications</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#teaching">Teaching</a>
+      <a href="../index.html#supervision">Supervision</a>
+      <a href="../index.html#service">Service</a>
+    </div>
+  </header>
+
+  <section class="section tool">
+  <div class="container">
+
+    <!-- intro -->
+    <div class="card" id="acabella">
+      <p class="section-title">The ACABELLA tool</p>
+      <div class="tool-intro">
+        <div>
+          <p class="about-text">
+            ACABELLA analyzes the security of pairing-based attribute-based encryption (ABE) schemes from their pair encodings.
+            It checks properties that imply security proofs in the
+            <a href="https://eprint.iacr.org/2017/233" target="_blank">AC17</a>,
+            <a href="https://eprint.iacr.org/2017/983" target="_blank">ABGW17</a> and
+            <a href="https://eprint.iacr.org/2022/1415" target="_blank">RW22</a> frameworks, and otherwise looks for
+            master-key and decryption attacks in the <a href="https://eprint.iacr.org/2020/460" target="_blank">Venema–Alpár</a> framework.
+            The <a href="https://eprint.iacr.org/2024/1352" target="_blank">ISABELLA</a> extension computes the substitution vectors
+            that prove security for the broader class of schemes introduced in that paper.
+          </p>
+          <p class="about-text">
+            Everything runs in your browser: the schemes you enter are not sent anywhere, and the page stores nothing on your device.
+          </p>
+          <div class="pub-links" style="margin-top:0.9rem;">
+            <a class="pub-link" href="https://github.com/abecryptools/ACABELLA" target="_blank">ACABELLA code</a>
+            <a class="pub-link" href="https://github.com/lincolncryptools/ISABELLA" target="_blank">ISABELLA code</a>
+            <a class="pub-link" href="https://eprint.iacr.org/2024/1352" target="_blank">ISABELLA paper</a>
+          </div>
+        </div>
+        <div class="engine" id="engine" data-state="loading" role="status" aria-live="polite">
+          <span class="engine-dot" aria-hidden="true"></span><span id="engine-text">Loading Python…</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- input -->
+    <div class="card" id="input">
+      <p class="section-title">Describe your scheme</p>
+
+      <div class="mode-switch" role="tablist" aria-label="Analysis type">
+        <button type="button" role="tab" id="tab-acabella" aria-controls="panel-acabella" aria-selected="true" data-mode="acabella">ACABELLA analysis</button>
+        <button type="button" role="tab" id="tab-isabella" aria-controls="panel-isabella" aria-selected="false" data-mode="isabella">ISABELLA extension</button>
+      </div>
+
+      <div class="start-row">
+        <label for="example-select">Start from</label>
+        <select id="example-select"><option value="">An empty form</option></select>
+        <button type="button" class="btn btn-quiet" id="load-example">Load</button>
+        <button type="button" class="link-btn" id="toggle-paste">or paste ACABELLA JSON</button>
+      </div>
+      <div class="paste-json" id="paste-json" hidden>
+        <label class="field"><span class="hint">Paste a JSON description in the format of the command-line tool. Its fields fill the form below.</span>
+          <textarea id="paste-text" spellcheck="false" placeholder='{"scheme_id": "...", "analysis": "security", "k": ["..."], ...}'></textarea>
+        </label>
+        <button type="button" class="btn btn-quiet" id="paste-fill">Fill the form</button>
+      </div>
+
+      <form id="scheme-form" novalidate>
+        <div class="fields" style="margin-bottom:1.25rem;">
+          <div class="field">
+            <label for="scheme_id">Scheme name</label>
+            <input type="text" id="scheme_id" placeholder="e.g. cm14" autocomplete="off">
+          </div>
+        </div>
+
+        <div id="panel-acabella" role="tabpanel" aria-labelledby="tab-acabella">
+          <p class="mode-blurb">
+            Enter the key encodings, ciphertext encodings and public parameters as polynomials, one per line.
+            Use variable names, integers, <code>+ - * /</code> and parentheses. Switch on each analysis you want to run.
+          </p>
+          <div id="acabella-sections"></div>
+        </div>
+
+        <div id="panel-isabella" role="tabpanel" aria-labelledby="tab-isabella" hidden>
+          <p class="mode-blurb">
+            For pair encoding schemes in the ISABELLA class. ACABELLA checks that the encodings have the required form
+            and returns the substitution vectors for the security proof, or explains which condition fails.
+          </p>
+          <div class="fields" id="isabella-fields"></div>
+        </div>
+
+        <div class="form-errors" id="form-errors" aria-live="polite"></div>
+
+        <div class="run-row">
+          <button type="submit" class="btn btn-primary" id="run" disabled>Run analysis</button>
+          <button type="button" class="btn btn-quiet" id="stop" hidden>Stop</button>
+          <span class="run-note" id="run-note">The first run waits for Python to finish loading.</span>
+        </div>
+      </form>
+    </div>
+
+    <!-- results -->
+    <div class="card" id="results-card" hidden>
+      <p class="section-title">Results</p>
+      <div id="results"></div>
+    </div>
+
+    <!-- json -->
+    <div class="card json-preview" id="json-card">
+      <p class="section-title">JSON description</p>
+      <p class="body-text" style="margin-bottom:0.75rem;">
+        The form above in the input format of the command-line tools. Save it to rerun the analysis later
+        with <code>acabella</code> or <code>main.py</code>, or paste it back in here.
+      </p>
+      <pre><code id="json-out"></code></pre>
+      <div class="json-actions">
+        <button type="button" class="btn btn-quiet" id="copy-json">Copy JSON</button>
+        <button type="button" class="btn btn-quiet" id="download-json">Download JSON</button>
+        <button type="button" class="btn btn-quiet" id="share-link">Copy link to this scheme</button>
+      </div>
+    </div>
+
+    <!-- credits -->
+    <div class="card">
+      <p class="section-title">About the tool</p>
+      <p class="credits">
+        ACABELLA was created by Antonio de la Piedra, Marloes Venema and Greg Alpár. The ISABELLA extension was created by
+        Doreen Riepel, Marloes Venema and Tanya Verma.
+      </p>
+      <p class="credits">
+        We remember Antonio, who worked on ACABELLA and the early stages of the extension but passed away before he could see
+        the fruits of his work. He is missed tremendously.
+      </p>
+      <p class="credits">
+        This page runs the Python code from the ISABELLA repository with <a href="https://pyodide.org" target="_blank">Pyodide</a>,
+        served from this website together with SymPy and MathJax: your browser contacts no other server and stores nothing.
+        Source code is released under the GNU General Public License v3.
+      </p>
+    </div>
+
+  </div>
+  </section>
+
+  <footer class="site-footer">
+    <span>Marloes Venema · University of Wuppertal · Based on a design by <a href="https://provsec.org/doreen.html" target="_blank">Doreen Riepel</a></span>
+    <span class="last-modified">Last modified: <span id="last-modified"></span></span>
+  </footer>
+
+  <script>
+    'use strict';
+    (function () {
+      const d = new Date(document.lastModified);
+      const p = n => String(n).padStart(2, '0');
+      document.getElementById('last-modified').textContent =
+        p(d.getDate()) + '/' + p(d.getMonth() + 1) + '/' + String(d.getFullYear()).slice(-2);
+    })();
+    const navToggle = document.getElementById('nav-toggle');
+    const navDropdown = document.getElementById('nav-dropdown');
+    navToggle.addEventListener('click', () => navDropdown.classList.toggle('open'));
+    navDropdown.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navDropdown.classList.remove('open')));
+  </script>
+  <script>window.ACABELLA_BUILD = 'cad1aef69b'; window.SITE_VENDOR = {"pyodide": "0.27.7", "mathjax": "3.2.2"};</script>
+  <script src="app.js?v=cad1aef69b"></script>
+</body>
+</html>

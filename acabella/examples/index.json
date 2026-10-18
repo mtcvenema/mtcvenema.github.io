@@ -1,0 +1,212 @@
+[
+ {
+  "file": "bsw07_config.json",
+  "mode": "acabella",
+  "label": "BSW07: security analysis"
+ },
+ {
+  "file": "cm14/cm14_all.json",
+  "mode": "acabella",
+  "label": "CM14: all analyses"
+ },
+ {
+  "file": "cm14/cm14_decryption_attack_no_corruption.json",
+  "mode": "acabella",
+  "label": "CM14: decryption attack"
+ },
+ {
+  "file": "cm14/cm14_decryption_attack_corruption_AA_extended.json",
+  "mode": "acabella",
+  "label": "CM14: decryption attack with AA_extended corruption"
+ },
+ {
+  "file": "cm14/cm14_master_key_no_corruption_config.json",
+  "mode": "acabella",
+  "label": "CM14: master-key attack"
+ },
+ {
+  "file": "cm14/cm14_analysis_config.json",
+  "mode": "acabella",
+  "label": "CM14: security analysis"
+ },
+ {
+  "file": "ksw08_ipe_config.json",
+  "mode": "acabella",
+  "label": "KSW08: security analysis"
+ },
+ {
+  "file": "ld20/ld20_mka.json",
+  "mode": "acabella",
+  "label": "LD20: master-key attack"
+ },
+ {
+  "file": "lm18/lm18_mka_corr.json",
+  "mode": "acabella",
+  "label": "LM18: master-key attack with mixed_AA_corr corruption"
+ },
+ {
+  "file": "lxxh16/lxxh16_config_mka_no_corruption.json",
+  "mode": "acabella",
+  "label": "LXXH16: master-key attack"
+ },
+ {
+  "file": "lxxh16/lxxh16_config_mka_corruption.json",
+  "mode": "acabella",
+  "label": "LXXH16: master-key attack with mixed_CA_corr corruption"
+ },
+ {
+  "file": "mgz19/mgz19_config_mka_no_corruption.json",
+  "mode": "acabella",
+  "label": "MGZ19: master-key attack"
+ },
+ {
+  "file": "mgz19/mgz19_config_mka_corruption.json",
+  "mode": "acabella",
+  "label": "MGZ19: master-key attack with mixed_CA_corr corruption"
+ },
+ {
+  "file": "ndcw15/ndcw15_all.json",
+  "mode": "acabella",
+  "label": "NDCW15: all analyses"
+ },
+ {
+  "file": "ndcw15/ndcw15_decryption_attack_no_corruption.json",
+  "mode": "acabella",
+  "label": "NDCW15: decryption attack"
+ },
+ {
+  "file": "ndcw15/ndcw15_master_key_no_corruption_config.json",
+  "mode": "acabella",
+  "label": "NDCW15: master-key attack"
+ },
+ {
+  "file": "ndcw15/ndcw15_analysis_config.json",
+  "mode": "acabella",
+  "label": "NDCW15: security analysis"
+ },
+ {
+  "file": "po17/po17_all.json",
+  "mode": "acabella",
+  "label": "PO17: all analyses"
+ },
+ {
+  "file": "po17/po17_decryption_attack_no_corruption.json",
+  "mode": "acabella",
+  "label": "PO17: decryption attack"
+ },
+ {
+  "file": "po17/po17_decryption_attack_corruption_AA_extended.json",
+  "mode": "acabella",
+  "label": "PO17: decryption attack with AA_extended corruption"
+ },
+ {
+  "file": "po17/po17_master_key_no_corruption_config.json",
+  "mode": "acabella",
+  "label": "PO17: master-key attack"
+ },
+ {
+  "file": "po17/po17_master_key_corruption_config.json",
+  "mode": "acabella",
+  "label": "PO17: master-key attack with AA corruption"
+ },
+ {
+  "file": "po17/po17_analysis_config.json",
+  "mode": "acabella",
+  "label": "PO17: security analysis"
+ },
+ {
+  "file": "qlz13/qlz13_config_mka_no_corruption.json",
+  "mode": "acabella",
+  "label": "QLZ13: master-key attack"
+ },
+ {
+  "file": "wyo19/wyo19_dec_corr.json",
+  "mode": "acabella",
+  "label": "WYO19: decryption attack with AA corruption"
+ },
+ {
+  "file": "yj12/yj12_config_mka_corruption.json",
+  "mode": "acabella",
+  "label": "YJ12: master-key attack with mixed_AA_corr corruption"
+ },
+ {
+  "file": "yj14/yj14_all.json",
+  "mode": "acabella",
+  "label": "YJ14: all analyses"
+ },
+ {
+  "file": "yj14/yj14_decryption_attack_no_corruption.json",
+  "mode": "acabella",
+  "label": "YJ14: decryption attack"
+ },
+ {
+  "file": "yj14/yj14_decryption_attack_corruption_AA.json",
+  "mode": "acabella",
+  "label": "YJ14: decryption attack with AA corruption"
+ },
+ {
+  "file": "yj14/yj14_master_key_no_corruption_config.json",
+  "mode": "acabella",
+  "label": "YJ14: master-key attack"
+ },
+ {
+  "file": "yj14/yj14_master_key_corruption_config.json",
+  "mode": "acabella",
+  "label": "YJ14: master-key attack with AA corruption"
+ },
+ {
+  "file": "yj14/yj14_analysis_config.json",
+  "mode": "acabella",
+  "label": "YJ14: security analysis"
+ },
+ {
+  "file": "yjr13/yjr13_all.json",
+  "mode": "acabella",
+  "label": "YJR13: all analyses"
+ },
+ {
+  "file": "yjr13/yjr13_decryption_attack_no_corruption.json",
+  "mode": "acabella",
+  "label": "YJR13: decryption attack"
+ },
+ {
+  "file": "yjr13/yjr13_master_key_no_corruption_config.json",
+  "mode": "acabella",
+  "label": "YJR13: master-key attack"
+ },
+ {
+  "file": "yjr13/yjr13_master_key_corruption_config.json",
+  "mode": "acabella",
+  "label": "YJR13: master-key attack with AA corruption"
+ },
+ {
+  "file": "yjr13/yjr13_analysis_config.json",
+  "mode": "acabella",
+  "label": "YJR13: security analysis"
+ },
+ {
+  "file": "ven23/rvv_decentralized_cp-abe.json",
+  "mode": "isabella",
+  "label": "RVV: decentralized cp abe"
+ },
+ {
+  "file": "ven23/rvv_decentralized_kp-abe_flexible_authority_normal.json",
+  "mode": "isabella",
+  "label": "RVV: decentralized kp abe flexible authority normal"
+ },
+ {
+  "file": "ven23/ven23_e5_normal.json",
+  "mode": "isabella",
+  "label": "Ven23: e5 normal"
+ },
+ {
+  "file": "ven23/ven23_s5_normal.json",
+  "mode": "isabella",
+  "label": "Ven23: s5 normal"
+ },
+ {
+  "file": "ven23/ven23_s5_normal_with_corruption.json",
+  "mode": "isabella",
+  "label": "Ven23: s5 normal with corruption"
+ }
+]
