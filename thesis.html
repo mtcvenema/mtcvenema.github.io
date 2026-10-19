@@ -13,29 +13,8 @@
 
 <body>
 
-  <!-- fixed header -->
-  <header class="site-header">
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <a class="navbar-logo" href="index.html">Marloes <span>Venema</span></a>
-      <div class="navbar-links">
-        <a class="navbar-item" href="index.html#about">About</a>
-        <a class="navbar-item" href="index.html#publications">Publications</a>
-        <a class="navbar-item" href="index.html#projects">Projects</a>
-        <a class="navbar-item" href="index.html#teaching">Teaching</a>
-        <a class="navbar-item" href="index.html#supervision">Supervision</a>
-        <a class="navbar-item" href="index.html#service">Service</a>
-      </div>
-      <button class="navbar-hamburger" id="nav-toggle" aria-label="Open navigation">☰</button>
-    </nav>
-    <div class="nav-mobile-dropdown" id="nav-dropdown">
-      <a href="index.html#about">About</a>
-      <a href="index.html#publications">Publications</a>
-      <a href="index.html#projects">Projects</a>
-      <a href="index.html#teaching">Teaching</a>
-      <a href="index.html#supervision">Supervision</a>
-      <a href="index.html#service">Service</a>
-    </div>
-  </header>
+  <!-- header (menu): see site.js -->
+  <div id="site-header"></div>
 
   <section class="section">
   <div class="container">
@@ -108,27 +87,9 @@
   </div>
   </section>
 
-  <footer class="site-footer">
-    <span>Marloes Venema · University of Wuppertal · Based on a design by <a href="https://provsec.org/doreen.html" target="_blank">Doreen Riepel</a></span>
-    <span class="last-modified">Last modified: <span id="last-modified"></span></span>
-  </footer>
+  <!-- footer: see site.js -->
+  <div id="site-footer"></div>
+  <script src="site.js"></script>
 
-  <script>
-    'use strict';
-
-    // Last modified: the date the server reports for this page
-    (function () {
-      const d = new Date(document.lastModified);
-      const p = n => String(n).padStart(2, '0');
-      document.getElementById('last-modified').textContent =
-        p(d.getDate()) + '/' + p(d.getMonth() + 1) + '/' + String(d.getFullYear()).slice(-2);
-    })();
-
-    // Mobile nav (same behavior as the homepage)
-    const navToggle = document.getElementById('nav-toggle');
-    const navDropdown = document.getElementById('nav-dropdown');
-    navToggle.addEventListener('click', () => navDropdown.classList.toggle('open'));
-    navDropdown.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navDropdown.classList.remove('open')));
-  </script>
 </body>
 </html>

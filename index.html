@@ -11,33 +11,10 @@
   <link rel="stylesheet" href="variants/v2-floating.css">
 </head>
 
-<body>
+<body data-page="home">
 
-  <!-- fixed header -->
-  <header class="site-header">
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <a class="navbar-logo" href="#about">Marloes <span>Venema</span></a>
-      <div class="navbar-links">
-        <a class="navbar-item" href="#about">About</a>
-        <a class="navbar-item" href="#publications">Publications</a>
-        <a class="navbar-item" href="#projects">Projects</a>
-        <a class="navbar-item" href="#tools">Tools</a>
-        <a class="navbar-item" href="#teaching">Teaching</a>
-        <a class="navbar-item" href="#supervision">Supervision</a>
-        <a class="navbar-item" href="#service">Service</a>
-      </div>
-      <button class="navbar-hamburger" id="nav-toggle" aria-label="Open navigation">☰</button>
-    </nav>
-    <div class="nav-mobile-dropdown" id="nav-dropdown">
-      <a href="#about">About</a>
-      <a href="#publications">Publications</a>
-      <a href="#projects">Projects</a>
-      <a href="#tools">Tools</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#supervision">Supervision</a>
-      <a href="#service">Service</a>
-    </div>
-  </header>
+  <!-- header (menu): see site.js -->
+  <div id="site-header"></div>
 
   <section class="section">
   <div class="container">
@@ -256,10 +233,9 @@
   </div>
   </section>
 
-  <footer class="site-footer">
-    <span>Marloes Venema · University of Wuppertal · Based on a design by <a href="https://provsec.org/doreen.html" target="_blank">Doreen Riepel</a></span>
-    <span class="last-modified">Last modified: <span id="last-modified"></span></span>
-  </footer>
+  <!-- footer: see site.js -->
+  <div id="site-footer"></div>
+  <script src="site.js"></script>
 
   <script src="publications.js"></script>
   <script>
@@ -337,20 +313,6 @@
     }
 
     renderPubs(PUBS);
-
-    // Last modified: the date the server reports for this page
-    (function () {
-      const d = new Date(document.lastModified);
-      const p = n => String(n).padStart(2, '0');
-      document.getElementById('last-modified').textContent =
-        p(d.getDate()) + '/' + p(d.getMonth() + 1) + '/' + String(d.getFullYear()).slice(-2);
-    })();
-
-    // Mobile nav
-    const navToggle = document.getElementById('nav-toggle');
-    const navDropdown = document.getElementById('nav-dropdown');
-    navToggle.addEventListener('click', () => navDropdown.classList.toggle('open'));
-    navDropdown.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navDropdown.classList.remove('open')));
 
     // Scroll spy
     (function () {
